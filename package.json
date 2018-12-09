@@ -1,0 +1,19 @@
+{
+  "name": "vue-cli-plugin-vuefire",
+  "version": "0.1.0",
+  "description": "Vue-CLI plugin for adding Vuefire to your project",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NataliaTepluhina/vue-cli-plugin-vuefire.git"
+  },
+  "keywords": [
+    "vue",
+    "vue-cli",
+    "vuefire",
+    "firebase"
+  ],
+  "author": "Natalia Tepluhina <tarya.se@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/NataliaTepluhina/vue-cli-plugin-vuefire#readme"
+}
