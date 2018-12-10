@@ -13,7 +13,7 @@ module.exports = [
     },
     name: `addFirestoreCredentials`,
     type: 'confirm',
-    message: 'Do you want to enter your Firebase API key and project ID now?',
+    message: 'Do you want to enter your Firebase credentials now?',
     default: false,
     group: 'Recommended',
     description: 'You can enter your credentials at this step, they will be used in example component',
@@ -26,7 +26,6 @@ module.exports = [
     type: 'input',
     message: 'Input your Firebase API Key (you can leave it empty and configure later in example component)',
     group: 'Recommended',
-    description: 'Input your Firebase API Key (you can leave it empty and configure later in example component)',
   },
   {
     when: (response) => {
@@ -36,7 +35,6 @@ module.exports = [
     type: 'input',
     message: 'Input your Firebase Project ID (you can leave it empty and configure later in example component)',
     group: 'Recommended',
-    description: 'Input your Firebase Project ID (you can leave it empty and configure later in example component)',
   },
   {
     when: (response) => {
@@ -46,6 +44,5 @@ module.exports = [
     type: 'input',
     message: 'Input your collection name (you can leave it empty and configure later in example component)',
     group: 'Recommended',
-    description: 'Input your collection name (you can leave it empty and configure later in example component)',
   },
 ];
