@@ -16,5 +16,8 @@ export default {
       collection: []
     };
   },
+  firestore: {
+    collection: db.collection("<%= collection && collection.trim() ? collection : 'YOUR_COLLECTION' %>")
+  }
 };
 </script>
