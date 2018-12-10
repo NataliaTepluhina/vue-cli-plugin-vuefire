@@ -1,3 +1,5 @@
+import chalk from 'chalk'
+
 module.exports = (api, options, rootOptions) => {
   api.extendPackage({
     dependencies: {
@@ -10,6 +12,7 @@ module.exports = (api, options, rootOptions) => {
     api.render('./template', {
       ...options,
     });
+    api.exitLog(`You can find an example component in ${chalk.cyan(chalk.bold(src/components/FirestoreExample.vue))}. Don't forget to check your Firebase credentials!`)
   }
 
   let fireLines = `\nimport VueFire from 'vuefire';\n\nVue.use(VueFire);`;
