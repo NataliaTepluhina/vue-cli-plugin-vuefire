@@ -12,8 +12,8 @@ import firebase from "firebase/app";
 import "firebase/firestore";
 
 firebase.initializeApp({
-  apiKey: "<%= apiKey.trim() ? apiKey :  '<<YOUR_API_KEY>>' %>",
-  projectId: "<%= projectId.trim() ? projectId :  '<<YOUR_PROJECT_ID>>' %>"
+  apiKey: "<%= apiKey.trim() ? apiKey :  '<YOUR_API_KEY>' %>",
+  projectId: "<%= projectId.trim() ? projectId :  'YOUR_PROJECT_ID' %>"
 });
 
 const db = firebase.firestore();
@@ -26,7 +26,7 @@ export default {
     };
   },
   firestore: {
-    collection: db.collection("<%= collection.trim() ? collection :  '<<YOUR_COLLECTION>>' %>")
+    collection: db.collection("<%= collection.trim() ? collection :  'YOUR_COLLECTION' %>")
   }
 };
 </script>
