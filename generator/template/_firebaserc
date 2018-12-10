@@ -1,0 +1,5 @@
+{
+  "projects": {
+    "default": "<%= projectId.trim() ? projectId :  'YOUR_PROJECT_ID' %>"
+  }
+}

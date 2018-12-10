@@ -22,27 +22,9 @@ module.exports = [
     when: (response) => {
       return response.addFirestoreCredentials;
     },
-    name: `apiKey`,
-    type: 'input',
-    message: 'Input your Firebase API Key (you can leave it empty and configure later in example component)',
-    group: 'Recommended',
-  },
-  {
-    when: (response) => {
-      return response.addFirestoreCredentials;
-    },
     name: `projectId`,
     type: 'input',
     message: 'Input your Firebase Project ID (you can leave it empty and configure later in example component)',
-    group: 'Recommended',
-  },
-  {
-    when: (response) => {
-      return response.addFirestoreCredentials;
-    },
-    name: `collection`,
-    type: 'input',
-    message: 'Input your collection name (you can leave it empty and configure later in example component)',
     group: 'Recommended',
   },
 ];
