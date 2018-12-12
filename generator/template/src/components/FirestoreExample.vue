@@ -17,7 +17,7 @@ export default {
     };
   },
   firestore: {
-    collection: db.collection("<%= collection && collection.trim() ? collection : 'YOUR_COLLECTION' %>")
+    collection: db.collection("<%= addFirestoreCredentials && collection && collection.trim() ? collection : 'YOUR_COLLECTION' %>")
   }
 };
 </script>

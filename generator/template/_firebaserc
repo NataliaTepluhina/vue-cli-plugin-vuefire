@@ -1,5 +1,5 @@
 {
   "projects": {
-    "default": "<%= projectId && projectId.trim() ? projectId :  'YOUR_PROJECT_ID' %>"
+    "default": "<%= addFirestoreCredentials && projectId && projectId.trim() ? projectId :  'YOUR_PROJECT_ID' %>"
   }
 }
